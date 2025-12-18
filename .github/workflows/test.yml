@@ -6,7 +6,7 @@ env:
   FORCE_COLOR: 1
 
 jobs:
-  build:
+  test:
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
@@ -48,10 +48,6 @@ jobs:
           python -m pip install -U setuptools virtualenv
           python -m pip install -U --requirement=requirements-travis.txt
           python -m pip install .
-
-      - name: Lint
-        run: |
-          make check
 
       - name: Tox tests
         run: |
