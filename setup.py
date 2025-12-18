@@ -105,7 +105,6 @@ setup(
     extras_require=get_extras_require(),
     test_suite='humanfriendly.tests',
     tests_require=[
-        'capturer >= 2.1',
         'coloredlogs >= 2.0',
     ],
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*',

@@ -1,5 +1,4 @@
 # Test suite requirements.
-capturer >= 2.1
 coloredlogs >= 15.0.1
 docutils >= 0.15
 mock >= 3.0.5
